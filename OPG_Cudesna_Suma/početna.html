@@ -4,47 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="OPG Čudesna Šuma">
+    <meta name="author" content="Filip Miloš">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <title>Čudesna Šuma</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&family=Petit+Formal+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap reboot CSS -->
     <link href="css/bootstrap-reboot.css" rel="stylesheet">
-    <!-- Bootstrap grid CSS -->
     <link href="css/bootstrap-grid.css" rel="stylesheet">
-    <!-- Naš stil -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <!--
-        <div class="container-fluid grid">
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-        </div>
-    </div>
-    -->
-
     <main role="main">
         <div class="container-fluid p-0">
-            <header class="row m-0">
+            <header class="row m-0 main-h">
               <div class="col-2 offset-1 box">
                   <div id="title">
-                      <h1><span>OPG</span> <br>Čudesna šuma</h1>
+                      <a href="početna.html"><h1><span>OPG</span> <br>Čudesna šuma</h1></a>
                   </div>
                   <div class="categories-menu">
                     <h2>
@@ -72,12 +51,8 @@
                       <a href="kontakt.html">Kontakt</a>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="empty">
-
-                  </div>
-                </div>
-                <div class="row">
+                <div class="row none"><div class="empty"></div></div>
+                <div class="row none">
                   <div class="col-8 search-bar">
                     <input type="text" placeholder="Pretražite web trgovinu...">
                     <i class="fa fa-search mg"></i>
@@ -90,12 +65,19 @@
 
               <div class="col-1">
                 <div class="cart">
-                  <i class="fa fa-shopping-cart"></i>
+                  <i class="fa fa-shopping-cart green"></i>
                 </div>
               </div>
             </header>
-
-            <div class="row m-0">
+            <header class="phone">
+              <i class="fa fa-bars green bar"></i>
+              <i class="fa fa-search green search-phone"></i>
+              <div id="title-2">
+                  <a href="početna.html" class="green"><h1><span>OPG</span> <br>Čudesna šuma</h1></a>
+              </div>
+              <i class="fa fa-shopping-cart green cart-phone"></i>
+            </header>
+            <div class="row m-0 banner-row">
                 <div class="arrow-up"></div>
                 <div class="col-3 offset-1 menu">
                   <ul>
@@ -171,7 +153,7 @@
               <div class="round left-chevron"><img class="next" src="img/icons/chevron-left.png"/></div>
               <h3 class="offset-1">Popularni proizvodi</h3>
               <div class="col-1"></div>
-              <div class="col-2 card">
+              <div class="col-2 card first-card">
                   <div class="item-photo">
                     <img src="img/items/jecmene_pahuljice.webp"/>
                   </div>
@@ -187,7 +169,7 @@
                     </button>
                   </div>
               </div>
-              <div class="col-2 card">
+              <div class="col-2 card second-card">
                 <div class="item-photo">
                   <img src="img/items/Prirodni-mutni-sok-jabuka-cikla.webp"/>
                 </div>
@@ -203,7 +185,7 @@
                   </button>
                 </div>
               </div>
-              <div class="col-2 card">
+              <div class="col-2 card third-card">
                 <div class="item-photo">
                   <img src="img/items/pekmez_od_sljive.webp"/>
                 </div>
@@ -219,7 +201,7 @@
                   </button>
                 </div>
               </div>
-              <div class="col-2 card">
+              <div class="col-2 card fourth-card">
                 <div class="item-photo">
                   <img src="img/items/kozji_sir.webp"/>
                 </div>
@@ -250,7 +232,7 @@
                     informirati o zanimljivim eko temama koje se tiču naše
                     svakodnevice, ali i unaprjeđenja kvalitete života općenito.
                   </p>
-                  <img class="arrow" src="img/right-arrow-green.webp"/>
+                  <img class="arrow-left" src="img/icons/right-arrow-green.png"/>
                 </div>
               </div>
             </div>
@@ -266,7 +248,7 @@
                     jesti fino i zdravo te živjeti održivo. Baci oko na raspored
                     i dođi na naše radionice, degustacije i online druženja.
                   </p>
-                  <img class="arrow" src="img/right-arrow-green.webp"/>
+                  <img class="arrow-right" src="img/icons/left-arrow-yellow.png"/>
                 </div>
               </div>
             </div>

@@ -378,6 +378,7 @@ span{
   align-items: center;
   height: 50px;
   border-right: solid 1px black;
+  min-width: 150px;
   transition: .5s;
 }
 
@@ -388,6 +389,20 @@ span{
 #title{
   font-size: 1.1rem;
   line-height: 2.5rem;
+  color: #DAD873;
+  white-space: nowrap;
+  height: 80px;
+  position: relative;
+}
+
+#title h1{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+#title a {
+  text-decoration: none;
   color: #DAD873;
 }
 
@@ -621,13 +636,13 @@ h2 > i{
 }
 
 .left-chevron{
-  left: 140px;
+  left: 7.2vw;
   top: 50%;
   transform: translateY(-10%);
 }
 
 .right-chevron{
-  right: 140px;
+  right:  7.2vw;
   top: 50%;
   transform: translateY(-10%);
 }
@@ -724,10 +739,14 @@ h3{
   margin-top: 80px;
 }
 
+.blog:hover, .events:hover{
+  cursor: pointer;
+}
+
 .blog h4{
-  font-size: 2.1rem;
+  font-size: 2vw;
   color: black;
-  margin: 35px 0 15px 35px;
+  margin: 1.5vw 0 15px 1.5vw;
   text-shadow: 2px 2px 4px #a8a8a8;
 }
 
@@ -737,12 +756,12 @@ h3{
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   background-color: #DAD873;
-  padding: 75px 25px 0 75px;
+  padding: 3vw 25px 0 3vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .blog p{
-  font-size: 1.45rem;
+  font-size: 1.2vw;
 }
 
 .blog > img{
@@ -752,18 +771,25 @@ h3{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.arrow{
+.arrow-left{
   position: absolute;
   left: -105px;
   margin-top: 15px;
   scale: .3;
 }
 
+.arrow-right{
+  position: absolute;
+  right: -105px;
+  margin-top: 25px;
+  scale: .3;
+}
+
 .events h4{
-  font-size: 2.1rem;
+  font-size: 2vw;
   color: black;
   float: right;
-  margin: 35px 35px 15px 0;
+  margin: 1.5vw 0 15px 1.5vw;
   text-shadow: 2px 2px 4px #a8a8a8;
 }
 
@@ -774,12 +800,12 @@ h3{
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   background-color: #3EB667;
-  padding: 75px 75px 0 45px;
+  padding: 3vw 25px 0 3vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .events p{
-  font-size: 1.45rem;
+  font-size: 1.2vw;
 }
 
 .events > img{
@@ -849,7 +875,7 @@ footer{
   margin-top: 80px;
   padding-top: 50px;
   width: 100%;
-  height: 350px;
+  min-height: 350px;
   background-color: #9DD2A7;
 }
 
@@ -921,6 +947,169 @@ footer a:visited{
   width: 100%;
   height: 100%;
   border: none;
+}
+
+@media only screen and (max-width: 1500px){
+  .quote, .author{
+    font-size: 3rem;
+  }
+
+  #title{
+    font-size: .8rem;
+    line-height: 1.6rem;
+  }
+
+  .cart{
+    font-size: 2.3rem;
+  }
+
+  .card{
+    min-width: 20%;
+  }
+
+  .fourth-card{
+    display: none;
+  }
+
+  .menu{
+    font-size: 1.2rem;
+  }
+
+  .arrow-right, .arrow-left{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1250px){
+  .third-card{
+    display: none;
+  }
+
+  .card{
+    min-width: 30%;
+  }
+}
+
+@media only screen and (max-width: 1150px){
+  .quote, .author{
+    font-size: 2.5rem;
+  }
+
+
+  #title{
+    font-size: .7rem;
+    line-height: 1.2rem;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .arrow-up{
+    display: none;
+  }
+
+  .banner{
+    min-width: 100%;
+  }
+
+  .banner-row{
+    display: block;
+    width: 100%;
+  }
+
+  .nav-link{
+    min-width: 40%;
+  }
+
+  .nav-link:last-child{
+    border-right: 1px solid black;
+  }
+
+  .categories-menu h2{
+    font-size: 1.2rem;
+  }
+
+  .none{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 950px){
+  #title{
+    font-size: .5rem;
+    line-height: 1rem;
+  }
+
+  .nav-link{
+    min-width: 60%;
+    border: none;
+    border-left: 1px solid black;
+  }
+
+  .nav-link:last-child{
+    border-right: none;
+  }
+
+  .second-card{
+    display: none;
+  }
+
+  .card{
+    min-width: 250px;
+  }
+}
+
+.phone{
+  position: relative;
+  display: none;
+  height: 50px;
+  min-width: 100%;
+  background-color: #DAD873;
+}
+
+
+.bar{
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  font-size: 1.8rem;
+}
+.search-phone{
+  position: absolute;
+  left: 65px;
+  top: 12px;
+  font-size: 1.8rem;
+}
+
+.cart-phone{
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  font-size: 1.8rem;
+}
+
+#title-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7px;
+  line-height: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 550px){
+  .main-h{
+    display: none;
+  }
+
+  .phone{
+    display: block;
+  }
+
+  .banner{
+    margin-top: 0;
+  }
 }
 
 /* Blog */
@@ -1163,8 +1352,7 @@ textarea{
 }
 
 .product{
-  min-width: 30%;
-  margin-top: 45px;
+  margin: 45px 25px 0 25px;
 }
 
 .fruit{
